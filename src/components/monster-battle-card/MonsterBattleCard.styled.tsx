@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import { Card, LinearProgress, linearProgressClasses, Typography } from "@mui/material"
+import { Card, LinearProgress, linearProgressClasses, Typography, Divider } from "@mui/material"
 import { colors } from "../../constants/colors"
 
 export const BattleMonsterCard = styled(Card, { shouldForwardProp: (prop) => prop !== "centralized" })<{ centralized?: boolean; }>(({ centralized }) => ({
@@ -20,6 +20,35 @@ export const BattleMonsterTitle = styled(Typography)(() => ({
     fontWeight: '400',
     fontSize: '36px',
     lineHeight: '42px',
+    color: colors.black,
+}))
+
+export const BattleMonsterImage = styled.img(() => ({
+    borderRadius: '7px',
+    width: '283px',
+    height: '178px'
+}))
+ 
+export const BattleMonsterName = styled(Typography)(() => ({
+    margin: '14px 0 5px 0',
+    fontFamily: 'Roboto',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    fontSize: '22px',
+    lineHeight: '25.78px',
+    color: colors.black,
+}))
+
+export const BattleMonsterDivider = styled(Divider)(() => ({
+}))
+ 
+export const BattleMonsterStatus = styled(Typography)(() => ({
+    margin: "11px 0 5px 0",
+    fontFamily: 'Roboto',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    fontSize: '12px',
+    lineHeight: '14.06px',
     color: colors.black,
 }))
 
